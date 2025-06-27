@@ -1,9 +1,14 @@
 package com.huang.accounting.frag_record;
 
+import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +18,12 @@ import com.huang.accounting.R;
 import com.huang.accounting.db.AccountBean;
 
 public class BaseRecordFragment extends Fragment {
+
+    KeyboardView keyboardView;
+    EditText et_money;
+    ImageView iv_icon;
+    GridView gridView;
+    TextView type, note, time;
 
     AccountBean accountBean;
 
@@ -29,10 +40,17 @@ public class BaseRecordFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_outcome, container, false);
-        initView();
+        initView(view);
+
     }
 
-    private void initView() {
-        
+    private void initView(View view) {
+        keyboardView = view.findViewById(R.id.frag_record_keyboard);
+        et_money = view.findViewById(R.id.fragment_record_money);
+        iv_icon = view.findViewById(R.id.fragment_record_icon);
+        gridView = view.findViewById(R.id.fragment_record_gridView);
+        time = view.findViewById(R.id.frag_record_tv_time);
+        note = view.findViewById(R.id.frag_record_tv_beizhu);
+        type = view.findViewById(R.id.fragment_record_type);
     }
 }
