@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">简约记账</string>
     <string name="edit_one">记一笔…</string>
+    <string name="month_out">本月支出</string>
+    <string name="month_in">本月收入</string>
+    <string name="budget">预算剩余</string>
+    <string name="month_num">￥ 0</string>
+    <string name="see_excel">查看图表分析</string>
+    <string name="day_num">今日支出 ￥0 收入 ￥0</string>
     <string name="searchDescription">搜索图标</string>
     <string name="moreDescription">更多图标</string>
+    <string name="hideDescription">显示和隐藏图标</string>
 </resources>

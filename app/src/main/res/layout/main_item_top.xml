@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_f3f3f3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/main_item_top_mouth_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_out" />
+        <!--支出数-->
+        <TextView
+            android:id="@+id/main_item_top_mouth_out_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_num"
+            android:layout_below="@id/main_item_top_mouth_out"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black" />
+        <!--隐藏图标-->
+        <ImageView
+            android:id="@+id/main_item_top_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/hideDescription"
+            android:src="@mipmap/ih_show"
+            android:layout_alignTop="@id/main_item_top_mouth_out_num" />
+
+        <TextView
+            android:id="@+id/main_item_top_mouth_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_in"
+            android:layout_below="@id/main_item_top_mouth_out_num" />
+        <!--收入数-->
+        <TextView
+            android:id="@+id/main_item_top_mouth_in_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/month_num"
+            android:layout_below="@id/main_item_top_mouth_out_num"
+            android:layout_toEndOf="@id/main_item_top_mouth_in"
+            android:layout_marginStart="5dp" />
+        <!--本月预算数-->
+        <TextView
+            android:id="@+id/main_item_top_mouth_budget_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_num"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/main_item_top_mouth_in"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/main_item_top_mouth_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/budget"
+            android:layout_toStartOf="@id/main_item_top_mouth_budget_num"
+            android:layout_alignBottom="@id/main_item_top_mouth_in" />
+
+        <TextView
+            android:id="@+id/main_item_top_see_excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_item_top_mouth_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/see_excel"
+            android:drawablePadding="10dp"
+            android:textColor="@color/green_006400"
+            app:drawableStartCompat="@mipmap/ih_biaoge" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_item_top_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_num"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>
