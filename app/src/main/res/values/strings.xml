@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">简约记账</string>
+    <string name="edit_one">记一笔…</string>
+    <string name="searchDescription">搜索图标</string>
+    <string name="moreDescription">更多图标</string>
 </resources>
