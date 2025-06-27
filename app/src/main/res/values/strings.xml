@@ -7,7 +7,11 @@
     <string name="month_num">￥ 0</string>
     <string name="see_excel">查看图表分析</string>
     <string name="day_num">今日支出 ￥0 收入 ￥0</string>
+    <string name="other">其他</string>
+    <string name="time">2020年10月30日 18:49</string>
+    <string name="note">添加备注</string>
     <string name="searchDescription">搜索图标</string>
     <string name="moreDescription">更多图标</string>
     <string name="hideDescription">显示和隐藏图标</string>
+    <string name="backDescription">返回图标</string>
 </resources>
