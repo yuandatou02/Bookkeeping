@@ -23,6 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 
 public abstract class BaseRecordFragment extends Fragment {
@@ -32,6 +33,7 @@ public abstract class BaseRecordFragment extends Fragment {
     ImageView iv_icon;
     GridView gridView;
     TextView typeTv, noteTv, timeTv;
+    List<AccountBean> typeList;
 
     AccountBean accountBean;
 
